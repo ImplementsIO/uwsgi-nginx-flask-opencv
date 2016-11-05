@@ -8,7 +8,7 @@ RUN apt-get update \
 
 # build opencv
 
-RUN mkdir build \
+RUN mkdir /build \
     && cd /build \
     && wget https://github.com/opencv/opencv/archive/3.1.0.tar.gz -O - | tar xzf - \
     && cd /build/opencv-3.1.0 \
